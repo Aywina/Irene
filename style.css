@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+
+
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text_p {
+    font-weight: 600;
+}
+
+.section_text_p1 {
+    text-align: center;
+}
+
+.section_text_p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+
+
+.icon {
+    cursor: pointer;
+    height: 3rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+
+section#about {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__pic-container {
+    width: 30%;
+}
+
+.about-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-details-container {
+    width: 70%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.details-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details-container p {
+    font-size: 16px;
+}
+
+.text-container {
+    margin-bottom: 50px;
+}
+
+.text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.arrow:hover {
+    color: #000;
+}
+
+
+
+.section__text__p1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.about-container {
+    flex-wrap: wrap;
+}
+
+.details-container {
+    width: 45%;
+}
+
+.text-container {
+    width: 100%;
+
+}
+
+#friends {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.section__text__p1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.friends-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.friends {
+    flex: 1;
+    max-width: calc(33% - 20px);
+    margin-bottom: 40px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.friends:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.friends-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.friends__description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.icon.arrow {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon.arrow:hover {
+    transform: scale(1.2);
+
+}
+
+#subject {
+    position: relative;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.section__text__p1 {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.title {
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+.subject-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.details-container {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+
+
+h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+
+.icon.arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+
+#hobbies {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+
+
+.section__text__p1 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #333;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.hobbies__item {
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.hobbies-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+
+.hobbies__title {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+
+.hobbies__text {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
