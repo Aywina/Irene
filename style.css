@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+    --peach: #c89b84;
+}
 
 * {
     margin: 0;
@@ -6,10 +8,10 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: white;
-
+    background-color: var(--peach);
 }
+
+
 
 html {
     scroll-behavior: smooth;
@@ -19,13 +21,14 @@ p {
     color: rgb(85, 85, 85);
 }
 
-
 a,
 .btn {
     transition: all 300ms ease;
 }
 
-
+.link {
+    font-family: Wina;
+}
 
 nav,
 .nav-links {
@@ -58,6 +61,7 @@ a:hover {
 }
 
 .logo {
+    font-family: Aywina;
     font-size: 2rem;
 }
 
@@ -66,22 +70,33 @@ a:hover {
 }
 
 #profile {
-    display: flex;
+    display: grid;
     justify-content: center;
-    gap: 5rem;
+    padding: 1rem;
     height: 80vh;
 }
 
 .section_pic-container {
     display: flex;
+    width: 100px;
     height: 400px;
-    width: 400px;
     margin: auto 0;
 }
 
-.section_text {
-    align-self: center;
-    text-align: center;
+#home {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-info {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.profile-social {
+    display: flex;
+    justify-content: center;
 }
 
 .section_text_p {
@@ -98,6 +113,7 @@ a:hover {
 }
 
 .title {
+    font-family: Wina;
     font-size: 3rem;
     text-align: center;
 }
@@ -123,7 +139,6 @@ a:hover {
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
@@ -168,10 +183,11 @@ section#about {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    margin-left: 5rem;
 }
 
 .about-details-container {
-    width: 70%;
+    width: 100%;
 }
 
 .about-container {
@@ -185,6 +201,7 @@ section#about {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1000px;
 }
 
 .icon {
@@ -210,6 +227,11 @@ section#about {
 .text-container p {
     font-size: 16px;
     line-height: 1.5;
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .arrow {
@@ -271,25 +293,54 @@ section#about {
     gap: 20px;
 }
 
+#subjects {
+    padding: 1rem;
+}
+
 
 .friends {
     flex: 1;
-    max-width: calc(33% - 20px);
+    max-width: calc(24% - 20px);
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 10px;
     transition: box-shadow 0.3s ease;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    position: relative;
 }
 
 .friends:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    transform: scale(1.2);
+}
+
+.friends:hover .friends-name {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.friends:not(:hover) {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.friends:not(:hover) .friends-name {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.friends-name {
+    opacity: 0;
 }
 
 .friends-img {
-    width: 100%;
+    width: 70%;
     height: auto;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -350,7 +401,7 @@ section#about {
 
 
 .details-container {
-    width: 200px;
+    width: 1000px;
     height: auto;
     margin: 10px;
     text-align: center;
@@ -428,13 +479,28 @@ h3 {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    transition: all 0.5s;
 }
 
+.hobbies__item:hover {
+    transform: scale(1.2);
+}
 
+.hobbies__item:not(:hover) {
+    transform: scale(1);
+}
+
+.hobbies__item:hover .hobbies__title {
+    opacity: 1;
+}
+
+.hobbies__item:not(hover) .hobbies__title {
+    opacity: 0;
+}
 
 .hobbies-img {
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
     margin-bottom: 20px;
 }
@@ -446,9 +512,9 @@ h3 {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
+    opacity: 0;
+    transition: all 0.2s;
 }
-
-
 
 .hobbies__text {
     color: #666;
